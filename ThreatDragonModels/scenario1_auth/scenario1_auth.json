@@ -19,8 +19,8 @@
         "cells": [
           {
             "position": {
-              "x": 190,
-              "y": 10
+              "x": 170,
+              "y": -149.99999999999997
             },
             "size": {
               "width": 190,
@@ -28,7 +28,7 @@
             },
             "attrs": {
               "text": {
-                "text": "A new blank model template"
+                "text": "User Authentication System"
               }
             },
             "visible": true,
@@ -37,7 +37,7 @@
             "id": "f3ba6ded-7614-456e-b6b8-76d9f227e9de",
             "data": {
               "type": "tm.Text",
-              "name": "A new blank model template",
+              "name": "User Authentication System",
               "hasOpenThreats": false
             }
           },
@@ -531,7 +531,7 @@
                   "name": "block"
                 },
                 "sourceMarker": {
-                  "name": ""
+                  "name": "block"
                 },
                 "strokeDasharray": null
               }
@@ -548,7 +548,7 @@
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
               "hasOpenThreats": false,
-              "isBidirectional": false,
+              "isBidirectional": true,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
@@ -573,7 +573,8 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -594,13 +595,32 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
+              "threats": [
+                {
+                  "id": "dbd65656-5448-4421-b153-49a6bb2ae06e",
+                  "title": "Credential Brute Force Attack",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "",
+                  "description": "An attacker systematically tries username/password combinations against the login endpoint. Since there's no MFA and no account lockout mentioned, so then there's nothing which stops automated guessing tools like Hydra or Burp Intruder.",
+                  "mitigation": "Implement account lockout or rate limiting after N failed attempts (e.g., 5 tries leading to 15 min lockout). Add CAPTCHA for repeated failures. MFA would eliminate this risk almost entirely.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 1,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
             },
             "labels": [
               "login request: username+password"
@@ -824,6 +844,6 @@
     ],
     "diagramTop": 2,
     "reviewer": "",
-    "threatTop": 0
+    "threatTop": 1
   }
 }
