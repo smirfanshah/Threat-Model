@@ -804,53 +804,6 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "Create session",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Create session"
-            ],
-            "id": "f6f66b32-86df-4acc-8066-042af3a0a95a",
-            "source": {
-              "cell": "510fe0d7-7f3f-4531-b965-bfb520aef84c",
-              "port": "aed47180-7be1-49f3-bac4-e4dd9c7e9d19"
-            },
-            "target": {
-              "cell": "4ff9d85e-b953-44fe-a645-fa82788a931e",
-              "port": "a4153fd3-374d-43cb-8c06-7d82be9e7a39"
-            },
-            "vertices": []
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
               "name": "Session token",
               "description": "",
               "outOfScope": false,
@@ -882,12 +835,79 @@
                 "y": 130
               }
             ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Create session",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "575198b4-91cc-47f8-9a7e-866ce749e85d",
+                  "title": "Forced Browsing to Admin Endpoints",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "",
+                  "description": "After logging in as a regular user, an attacker manually navigates to /admin or /dashboard/admin routes. If the server only checks whether a session exists but not what role the session has, the attacker gains admin access.",
+                  "mitigation": "Implement Role-Based Access Control (RBAC), every protected route must verify both authentication (valid session) and authorization (correct role). Never rely on hiding URLs as security.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 4,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Create session"
+            ],
+            "id": "f6f66b32-86df-4acc-8066-042af3a0a95a",
+            "source": {
+              "cell": "510fe0d7-7f3f-4531-b965-bfb520aef84c",
+              "port": "aed47180-7be1-49f3-bac4-e4dd9c7e9d19"
+            },
+            "target": {
+              "cell": "4ff9d85e-b953-44fe-a645-fa82788a931e",
+              "port": "a4153fd3-374d-43cb-8c06-7d82be9e7a39"
+            },
+            "vertices": []
           }
         ]
       }
     ],
     "diagramTop": 2,
     "reviewer": "",
-    "threatTop": 3
+    "threatTop": 4
   }
 }
