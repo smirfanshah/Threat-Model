@@ -692,7 +692,8 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -713,13 +714,32 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
+              "threats": [
+                {
+                  "id": "5a2b2d41-91e6-47ae-aff6-a0625a5b0a4f",
+                  "title": "Session Token Manipulation",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "",
+                  "description": "If session tokens are predictable or weakly generated, an attacker can modify a token value to hijack another user's session. The data flow between Web Server and Session Manager is the attack surface.\n",
+                  "mitigation": "Use cryptographically secure random token generation (e.g., secrets.token_hex(32)). Bind tokens to IP/user-agent. Set short expiry times.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 2,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
             },
             "labels": [
               "Session token"
@@ -734,6 +754,10 @@
               "port": "aed47180-7be1-49f3-bac4-e4dd9c7e9d19"
             },
             "vertices": [
+              {
+                "x": 540,
+                "y": 40
+              },
               {
                 "x": 530,
                 "y": 80
@@ -844,6 +868,6 @@
     ],
     "diagramTop": 2,
     "reviewer": "",
-    "threatTop": 1
+    "threatTop": 2
   }
 }
