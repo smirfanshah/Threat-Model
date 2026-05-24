@@ -1,0 +1,16 @@
+{
+  "version": "2.6.2",
+  "summary": {
+    "title": "Scenario 2",
+    "owner": "me",
+    "description": "Scenario 2 (Medium): Third-Party API Integration\nBackground\n\nAn e-commerce platform integrates with a third-party payment gateway to process customer transactions. The platform’s backend sends payment requests to the gateway over a REST API using API keys for authentication. Transaction results are stored in an internal database and displayed to customers via the frontend. The platform also sends order confirmation emails through a third-party email service.\nTask\n1. Create a Data Flow Diagram in OWASP Threat Dragon for the entire transaction and notification flow. Your diagram must include trust boundaries separating internal systems from both third-party services.\n2. Identify at least six distinct threats covering a minimum of five STRIDE categories.\n3. For each threat, provide:\n• Threat title, STRIDE category, and severity rating (Low / Medium / High).\n• Description of how the threat manifests.\n• Proposed mitigation and justification.\n4. Identify and discuss one trust boundary violation visible in the DFD and explain its security implications.",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [],
+    "diagramTop": 0,
+    "reviewer": "",
+    "threatTop": 0
+  }
+}
