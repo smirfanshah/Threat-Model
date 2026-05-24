@@ -948,7 +948,8 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -969,15 +970,34 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": [],
+              "threats": [
+                {
+                  "id": "df3ce5bd-88c8-4f44-9ae1-f60f393d758a",
+                  "title": "transaction Result Manipulation in Transit",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "The payment gateway sends a transaction result (success/failure + amount) back to the backend. If an attacker is positioned as a MITM, they could modify the response — flipping a failed transaction to success, or changing the amount. The backend then stores the tampered result in the Transaction Database and ships the order.",
+                  "mitigation": "Use HMAC or digital signature verification on payment gateway responses — most gateways (Stripe, PayPal) provide webhook signatures. The backend must verify this signature before trusting any result. TLS alone isn't enough if the application layer doesn't validate integrity.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 2,
+                  "score": ""
+                }
+              ],
               "trustBoundaryIds": [
                 "2eaa0ddd-a1c9-43ce-844a-77c9b43df7de"
-              ]
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
             },
             "labels": [
               "transaction result"
@@ -1309,6 +1329,6 @@
     ],
     "diagramTop": 2,
     "reviewer": "",
-    "threatTop": 1
+    "threatTop": 2
   }
 }
