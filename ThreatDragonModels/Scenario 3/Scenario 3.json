@@ -1,0 +1,16 @@
+{
+  "version": "2.6.2",
+  "summary": {
+    "title": "Scenario 3",
+    "owner": "me",
+    "description": "A healthcare organisation has deployed a microservices-based patient management system. The system comprises the following services:\n\n• Patient Portal: A web frontend through which patients access their medical records and book appointments.\n\nThreat Modelling Assignment Information Security\n\n• Identity Service: Handles authentication and authorisation using OAuth 2.0 and issues JSON Web Tokens (JWTs).\n• Medical Records Service: Stores and retrieves patient records; communicates with the identity service to verify tokens.\n• Appointment Service: Manages appointment scheduling; reads patient data from the medical records service.\n• Notification Service: Sends appointment reminders via SMS and email using third-party providers.\n• API Gateway: Routes all inbound requests to the appropriate backend service.\nAll inter-service communication occurs over an internal network. The patient portal and the API gateway are exposed to the public internet.",
+    "id": 0
+  },
+  "detail": {
+    "contributors": [],
+    "diagrams": [],
+    "diagramTop": 0,
+    "reviewer": "",
+    "threatTop": 0
+  }
+}
