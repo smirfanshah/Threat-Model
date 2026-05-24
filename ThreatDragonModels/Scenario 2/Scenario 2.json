@@ -116,8 +116,8 @@
               "hasOpenThreats": false,
               "crossingFlows": [
                 "11198db4-a1b4-48e5-8901-f3769cd7a4d5",
-                "607f3886-4df0-48fc-b9a7-652397940a12",
-                "5c74ae05-918d-4f2d-bd61-d432001ef999"
+                "5c74ae05-918d-4f2d-bd61-d432001ef999",
+                "607f3886-4df0-48fc-b9a7-652397940a12"
               ],
               "containedElements": [
                 "76b9fe76-bc44-48a3-930b-0c4ea91a2699",
@@ -141,8 +141,8 @@
                 "text": "Customer"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -239,9 +239,27 @@
               "isTrustBoundary": false,
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "6d5afc09-9f93-4418-9c93-4dce6ebf8a09",
+                  "title": "Customer Denies Initiating Transaction",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "A customer completes a purchase, receives the goods, then disputes the charge claiming they never placed the order. If the platform has no detailed audit trail — timestamps, IP addresses, session IDs tied to each transaction — there's no evidence to counter the claim.",
+                  "mitigation": "Implement comprehensive transaction logging — log customer ID, session token, IP, timestamp, order details, and payment gateway reference ID for every transaction. Store logs in a tamper-evident, append-only store. This provides non-repudiation evidence for dispute resolution.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 3,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "repudiation": 1
+              }
             }
           },
           {
@@ -829,78 +847,6 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "REST API call + API key ",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [
-                {
-                  "id": "030890d0-0955-43ae-b6a9-4f1549aba38c",
-                  "title": "Payment Gateway Impersonation",
-                  "status": "Open",
-                  "severity": "High",
-                  "type": "",
-                  "description": " An attacker intercepts or poisons DNS to redirect the backend's REST API calls to a fake payment gateway. Since the backend authenticates to the gateway using an API key but may not strictly verify the gateway's identity (certificate pinning absent), it could be talking to a malicious server that harvests card data and returns fake success responses.",
-                  "mitigation": "Enforce TLS certificate validation on all outbound API calls — never disable SSL verification. Implement certificate pinning for the payment gateway endpoint. This ensures the backend only talks to the legitimate gateway even under DNS spoofing.",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 1,
-                  "score": ""
-                }
-              ],
-              "trustBoundaryIds": [],
-              "threatFrequency": {
-                "tampering": 0,
-                "informationDisclosure": 0,
-                "denialOfService": 0
-              }
-            },
-            "labels": [
-              "REST API call + API key "
-            ],
-            "id": "2de380c8-92ed-4e1e-8f0b-7365e845f78c",
-            "source": {
-              "x": 990,
-              "y": 290
-            },
-            "target": {
-              "x": 940,
-              "y": 440
-            },
-            "vertices": [
-              {
-                "x": 940,
-                "y": 330
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
                 "stroke": "#333333",
                 "targetMarker": {
                   "name": "block"
@@ -943,132 +889,6 @@
               "port": "05786ea5-51b7-4678-9ab3-92ea614ebcfd"
             },
             "vertices": []
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "red",
-                "strokeWidth": 2.5,
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "transaction result",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": true,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [
-                {
-                  "id": "df3ce5bd-88c8-4f44-9ae1-f60f393d758a",
-                  "title": "transaction Result Manipulation in Transit",
-                  "status": "Open",
-                  "severity": "High",
-                  "type": "Tampering",
-                  "description": "The payment gateway sends a transaction result (success/failure + amount) back to the backend. If an attacker is positioned as a MITM, they could modify the response — flipping a failed transaction to success, or changing the amount. The backend then stores the tampered result in the Transaction Database and ships the order.",
-                  "mitigation": "Use HMAC or digital signature verification on payment gateway responses — most gateways (Stripe, PayPal) provide webhook signatures. The backend must verify this signature before trusting any result. TLS alone isn't enough if the application layer doesn't validate integrity.",
-                  "modelType": "STRIDE",
-                  "new": false,
-                  "number": 2,
-                  "score": ""
-                }
-              ],
-              "trustBoundaryIds": [
-                "2eaa0ddd-a1c9-43ce-844a-77c9b43df7de"
-              ],
-              "threatFrequency": {
-                "tampering": 1,
-                "informationDisclosure": 0,
-                "denialOfService": 0
-              }
-            },
-            "labels": [
-              "transaction result"
-            ],
-            "id": "607f3886-4df0-48fc-b9a7-652397940a12",
-            "source": {
-              "x": 1030,
-              "y": 450
-            },
-            "target": {
-              "cell": "4251bcb3-46aa-4206-b1c7-596849c3ca0b",
-              "port": "194307a0-fb93-430d-a076-a5baceaa5a43"
-            },
-            "vertices": [
-              {
-                "x": 1050,
-                "y": 424
-              }
-            ]
-          },
-          {
-            "shape": "flow",
-            "attrs": {
-              "line": {
-                "stroke": "#333333",
-                "targetMarker": {
-                  "name": "block"
-                },
-                "sourceMarker": {
-                  "name": ""
-                },
-                "strokeDasharray": null
-              }
-            },
-            "width": 200,
-            "height": 100,
-            "zIndex": 10,
-            "connector": "smooth",
-            "data": {
-              "type": "tm.Flow",
-              "name": "Store result",
-              "description": "",
-              "outOfScope": false,
-              "isTrustBoundary": false,
-              "reasonOutOfScope": "",
-              "hasOpenThreats": false,
-              "isBidirectional": false,
-              "isEncrypted": false,
-              "isPublicNetwork": false,
-              "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
-            },
-            "labels": [
-              "Store result"
-            ],
-            "id": "1ec1762a-6a66-46e2-b9e7-a7f02ba77bb8",
-            "source": {
-              "cell": "4251bcb3-46aa-4206-b1c7-596849c3ca0b",
-              "port": "9fc9f250-2865-42d7-ab33-31c84cd485bf"
-            },
-            "target": {
-              "cell": "171011ba-d02a-406c-b70f-c315744d817c",
-              "port": "2b89c8b7-99f4-4152-ad7d-b465c3bac1f2"
-            },
-            "vertices": [
-              {
-                "x": 1040,
-                "y": 80
-              }
-            ]
           },
           {
             "shape": "flow",
@@ -1277,6 +1097,284 @@
             ]
           },
           {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "transaction result",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "df3ce5bd-88c8-4f44-9ae1-f60f393d758a",
+                  "title": "transaction Result Manipulation in Transit",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "The payment gateway sends a transaction result (success/failure + amount) back to the backend. If an attacker is positioned as a MITM, they could modify the response — flipping a failed transaction to success, or changing the amount. The backend then stores the tampered result in the Transaction Database and ships the order.",
+                  "mitigation": "Use HMAC or digital signature verification on payment gateway responses — most gateways (Stripe, PayPal) provide webhook signatures. The backend must verify this signature before trusting any result. TLS alone isn't enough if the application layer doesn't validate integrity.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 2,
+                  "score": ""
+                },
+                {
+                  "id": "5cff9924-373d-4ceb-8764-e624be44a994",
+                  "title": "Payment Endpoint Flooding",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "An attacker floods the backend's payment processing endpoint with a high volume of requests. Even if transactions fail at the gateway level, the backend still processes each request — consuming CPU, DB connections, and potentially exhausting the API rate limit quota on the payment gateway, making legitimate transactions impossible.",
+                  "mitigation": "Implement rate limiting per user/IP on the payment endpoint. Add a request queue to decouple frontend load from backend processing. Set up circuit breakers to stop forwarding requests to the gateway when a threshold is hit, protecting both your system and the third-party quota.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 5,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [
+                "2eaa0ddd-a1c9-43ce-844a-77c9b43df7de"
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 1
+              }
+            },
+            "labels": [
+              "transaction result"
+            ],
+            "id": "607f3886-4df0-48fc-b9a7-652397940a12",
+            "source": {
+              "x": 1030,
+              "y": 450
+            },
+            "target": {
+              "cell": "4251bcb3-46aa-4206-b1c7-596849c3ca0b",
+              "port": "194307a0-fb93-430d-a076-a5baceaa5a43"
+            },
+            "vertices": [
+              {
+                "x": 1050,
+                "y": 424
+              },
+              {
+                "x": 1050,
+                "y": 370
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Store result",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "0ad54b06-9740-48a6-8de1-e47b9c8bb4a8",
+                  "title": "Unauthorized Access to Transaction Database",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "",
+                  "description": "The frontend or email dispatcher shouldn't need direct database access — only the backend server should read/write transactions. If database credentials are broadly shared across services, a compromised frontend (e.g., via XSS or injected dependency) could directly query the Transaction Database, exposing all customer payment records.",
+                  "mitigation": "Apply strict least-privilege DB access — the backend server gets read/write on transactions, frontend gets nothing, email dispatcher gets read-only on order details only. Use separate DB credentials per service and enforce at the network level with firewall rules restricting DB port access to backend server IP only.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 6,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Store result"
+            ],
+            "id": "1ec1762a-6a66-46e2-b9e7-a7f02ba77bb8",
+            "source": {
+              "cell": "4251bcb3-46aa-4206-b1c7-596849c3ca0b",
+              "port": "9fc9f250-2865-42d7-ab33-31c84cd485bf"
+            },
+            "target": {
+              "cell": "171011ba-d02a-406c-b70f-c315744d817c",
+              "port": "2b89c8b7-99f4-4152-ad7d-b465c3bac1f2"
+            },
+            "vertices": [
+              {
+                "x": 1040,
+                "y": 80
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "REST API call + API key ",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "030890d0-0955-43ae-b6a9-4f1549aba38c",
+                  "title": "Payment Gateway Impersonation",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "",
+                  "description": " An attacker intercepts or poisons DNS to redirect the backend's REST API calls to a fake payment gateway. Since the backend authenticates to the gateway using an API key but may not strictly verify the gateway's identity (certificate pinning absent), it could be talking to a malicious server that harvests card data and returns fake success responses.",
+                  "mitigation": "Enforce TLS certificate validation on all outbound API calls — never disable SSL verification. Implement certificate pinning for the payment gateway endpoint. This ensures the backend only talks to the legitimate gateway even under DNS spoofing.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 1,
+                  "score": ""
+                },
+                {
+                  "id": "7a67472c-08c2-421d-a7d5-4b6dbe916efa",
+                  "title": "API Key Exposure in Transit or Logs",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Information disclosure",
+                  "description": "The backend authenticates to the payment gateway using an API key embedded in REST API calls. If the key appears in application logs, error messages, or is transmitted without proper header handling (e.g., accidentally logged in plaintext), an attacker with log access can steal the key and make unauthorized payment requests directly to the gateway.",
+                  "mitigation": "Store API keys in environment variables or a secrets manager (e.g., AWS Secrets Manager, HashiCorp Vault) — never hardcode. Ensure logging middleware masks sensitive headers like Authorization. Rotate keys regularly and restrict key permissions to minimum required operations.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 4,
+                  "score": ""
+                },
+                {
+                  "id": "cd7448d6-00dc-43c3-a89c-31910e1c64ae",
+                  "title": "New STRIDE threat",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "Provide a description for this threat",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": true,
+                  "number": 9,
+                  "score": ""
+                },
+                {
+                  "id": "0ee597b8-0517-48d8-8bf3-c4b47d3b6ca5",
+                  "title": "Trust Boundary Violation",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Tampering",
+                  "description": "The data flow carrying the REST API call (including the API key) crosses from your Internal Platform Zone directly into the Payment Gateway Zone — a third-party boundary you don't control.\nSecurity implications:\n\nYou lose control of the data once it crosses. The payment gateway could log your request payload, including sensitive fields, in ways you can't audit or control.\nThe API key travels across this boundary on every request. If the connection is misconfigured even once (e.g., TLS disabled in a dev environment that bleeds into prod), the key is exposed externally.\nThe gateway's availability directly affects your system. If the gateway goes down or rate-limits you, your entire checkout flow breaks — a dependency risk introduced by this boundary crossing.\nResponse integrity isn't guaranteed. Data flowing back across this boundary (transaction results) comes from an external party — your system must never blindly trust it without signature verification.\n\n",
+                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 10,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "REST API call + API key "
+            ],
+            "id": "2de380c8-92ed-4e1e-8f0b-7365e845f78c",
+            "source": {
+              "x": 990,
+              "y": 290
+            },
+            "target": {
+              "x": 940,
+              "y": 440
+            },
+            "vertices": [
+              {
+                "x": 960,
+                "y": 290
+              },
+              {
+                "x": 940,
+                "y": 330
+              }
+            ]
+          },
+          {
             "position": {
               "x": 860,
               "y": 450
@@ -1329,6 +1427,6 @@
     ],
     "diagramTop": 2,
     "reviewer": "",
-    "threatTop": 2
+    "threatTop": 10
   }
 }
