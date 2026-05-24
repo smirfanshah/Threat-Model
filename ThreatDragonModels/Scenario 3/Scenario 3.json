@@ -16,11 +16,2458 @@
         "placeholder": "New STRIDE diagram description",
         "thumbnail": "./public/content/images/thumbnail.stride.jpg",
         "version": "2.6.2",
-        "cells": []
+        "cells": [
+          {
+            "shape": "edge",
+            "attrs": {
+              "line": {
+                "targetMarker": {
+                  "name": "block",
+                  "width": 12,
+                  "height": 8
+                }
+              }
+            },
+            "id": "b0dab911-4f21-416d-bd44-9bd7490d198a",
+            "zIndex": 0,
+            "source": {
+              "cell": "3b2820d3-ef4e-4382-8611-a378792dd936",
+              "port": "e5d00694-d155-4da6-8c81-ee241744c740"
+            },
+            "target": {
+              "x": 1210,
+              "y": -270
+            },
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "vertices": []
+          },
+          {
+            "position": {
+              "x": 10,
+              "y": -340
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Microservices-Based Healthcare Application"
+              }
+            },
+            "visible": true,
+            "shape": "td-text-block",
+            "id": "76ac3ed1-077b-4535-a93f-327e1109de2d",
+            "zIndex": 1,
+            "data": {
+              "type": "tm.Text",
+              "name": "Microservices-Based Healthcare Application",
+              "hasOpenThreats": false
+            }
+          },
+          {
+            "position": {
+              "x": 260,
+              "y": 190
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Patient"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "e5d00694-d155-4da6-8c81-ee241744c740"
+                },
+                {
+                  "group": "right",
+                  "id": "3664a95b-e208-492f-b836-54a50f59f600"
+                },
+                {
+                  "group": "bottom",
+                  "id": "f4641b4c-bfc0-4ba8-80bc-af12000e2576"
+                },
+                {
+                  "group": "left",
+                  "id": "961e2337-7a5c-45dd-919f-81d700bfc846"
+                }
+              ]
+            },
+            "id": "88943fe3-7a03-4a6a-a0ab-4bf134adc98c",
+            "zIndex": 2,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Patient",
+              "description": "",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 1450,
+              "y": 50
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "SMS Provider"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "e5d00694-d155-4da6-8c81-ee241744c740"
+                },
+                {
+                  "group": "right",
+                  "id": "3664a95b-e208-492f-b836-54a50f59f600"
+                },
+                {
+                  "group": "bottom",
+                  "id": "f4641b4c-bfc0-4ba8-80bc-af12000e2576"
+                },
+                {
+                  "group": "left",
+                  "id": "961e2337-7a5c-45dd-919f-81d700bfc846"
+                }
+              ]
+            },
+            "id": "b58cc5cd-d0c1-4afe-9342-c3ce55d3ba0c",
+            "zIndex": 3,
+            "data": {
+              "type": "tm.Actor",
+              "name": "SMS Provider",
+              "description": "",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 1217.75,
+              "y": -140
+            },
+            "size": {
+              "width": 112.5,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Email Provider"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "actor",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "e5d00694-d155-4da6-8c81-ee241744c740"
+                },
+                {
+                  "group": "right",
+                  "id": "3664a95b-e208-492f-b836-54a50f59f600"
+                },
+                {
+                  "group": "bottom",
+                  "id": "f4641b4c-bfc0-4ba8-80bc-af12000e2576"
+                },
+                {
+                  "group": "left",
+                  "id": "961e2337-7a5c-45dd-919f-81d700bfc846"
+                }
+              ]
+            },
+            "id": "3b2820d3-ef4e-4382-8611-a378792dd936",
+            "zIndex": 4,
+            "data": {
+              "type": "tm.Actor",
+              "name": "Email Provider",
+              "description": "",
+              "isTrustBoundary": false,
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "providesAuthentication": false,
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 559,
+              "y": 165
+            },
+            "size": {
+              "width": 130,
+              "height": 110
+            },
+            "attrs": {
+              "text": {
+                "text": "Patient Portal"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "86ce4b14-2f25-4d5c-9548-d32f794652a9"
+                },
+                {
+                  "group": "right",
+                  "id": "3f3150c8-6ea2-4a56-8250-c8cf391ba86b"
+                },
+                {
+                  "group": "bottom",
+                  "id": "35777d2c-a1b9-43a7-ae18-92142be49cb1"
+                },
+                {
+                  "group": "left",
+                  "id": "7a42a010-adc9-4130-80f0-5aa767007633"
+                }
+              ]
+            },
+            "id": "c757dda0-0d57-45a0-b458-0fa844f8de71",
+            "zIndex": 5,
+            "data": {
+              "type": "tm.Process",
+              "name": "Patient Portal",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 870,
+              "y": 170
+            },
+            "size": {
+              "width": 120,
+              "height": 100
+            },
+            "attrs": {
+              "text": {
+                "text": "API Gateway"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "86ce4b14-2f25-4d5c-9548-d32f794652a9"
+                },
+                {
+                  "group": "right",
+                  "id": "3f3150c8-6ea2-4a56-8250-c8cf391ba86b"
+                },
+                {
+                  "group": "bottom",
+                  "id": "35777d2c-a1b9-43a7-ae18-92142be49cb1"
+                },
+                {
+                  "group": "left",
+                  "id": "7a42a010-adc9-4130-80f0-5aa767007633"
+                }
+              ]
+            },
+            "id": "dec8f3c9-521b-43fe-8fc0-56935e16be42",
+            "zIndex": 6,
+            "data": {
+              "type": "tm.Process",
+              "name": "API Gateway",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 1140,
+              "y": 165
+            },
+            "size": {
+              "width": 130,
+              "height": 120
+            },
+            "attrs": {
+              "text": {
+                "text": "Identity Service"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "86ce4b14-2f25-4d5c-9548-d32f794652a9"
+                },
+                {
+                  "group": "right",
+                  "id": "3f3150c8-6ea2-4a56-8250-c8cf391ba86b"
+                },
+                {
+                  "group": "bottom",
+                  "id": "35777d2c-a1b9-43a7-ae18-92142be49cb1"
+                },
+                {
+                  "group": "left",
+                  "id": "7a42a010-adc9-4130-80f0-5aa767007633"
+                }
+              ]
+            },
+            "id": "d5b06819-b7b7-4be8-b7c2-b8994f0d1ef9",
+            "zIndex": 7,
+            "data": {
+              "type": "tm.Process",
+              "name": "Identity Service",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 870,
+              "y": -20
+            },
+            "size": {
+              "width": 120,
+              "height": 110
+            },
+            "attrs": {
+              "text": {
+                "text": "Appointment \nService"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "86ce4b14-2f25-4d5c-9548-d32f794652a9"
+                },
+                {
+                  "group": "right",
+                  "id": "3f3150c8-6ea2-4a56-8250-c8cf391ba86b"
+                },
+                {
+                  "group": "bottom",
+                  "id": "35777d2c-a1b9-43a7-ae18-92142be49cb1"
+                },
+                {
+                  "group": "left",
+                  "id": "7a42a010-adc9-4130-80f0-5aa767007633"
+                }
+              ]
+            },
+            "id": "2b7b2335-3d44-40cc-9125-b57ca1d8fecf",
+            "zIndex": 8,
+            "data": {
+              "type": "tm.Process",
+              "name": "Appointment \nService",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 870,
+              "y": 355
+            },
+            "size": {
+              "width": 120,
+              "height": 120
+            },
+            "attrs": {
+              "text": {
+                "text": "Medical Records\n Service"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "86ce4b14-2f25-4d5c-9548-d32f794652a9"
+                },
+                {
+                  "group": "right",
+                  "id": "3f3150c8-6ea2-4a56-8250-c8cf391ba86b"
+                },
+                {
+                  "group": "bottom",
+                  "id": "35777d2c-a1b9-43a7-ae18-92142be49cb1"
+                },
+                {
+                  "group": "left",
+                  "id": "7a42a010-adc9-4130-80f0-5aa767007633"
+                }
+              ]
+            },
+            "id": "82cefcb0-2aa4-47f1-8fc5-bbc1bf626df5",
+            "zIndex": 9,
+            "data": {
+              "type": "tm.Process",
+              "name": "Medical Records\n Service",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "position": {
+              "x": 1224,
+              "y": 30
+            },
+            "size": {
+              "width": 100,
+              "height": 100
+            },
+            "attrs": {
+              "text": {
+                "text": "Notification\n Service"
+              },
+              "body": {
+                "stroke": "#333333",
+                "strokeWidth": 1.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "process",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "86ce4b14-2f25-4d5c-9548-d32f794652a9"
+                },
+                {
+                  "group": "right",
+                  "id": "3f3150c8-6ea2-4a56-8250-c8cf391ba86b"
+                },
+                {
+                  "group": "bottom",
+                  "id": "35777d2c-a1b9-43a7-ae18-92142be49cb1"
+                },
+                {
+                  "group": "left",
+                  "id": "7a42a010-adc9-4130-80f0-5aa767007633"
+                }
+              ]
+            },
+            "id": "e776efbf-9730-4ed8-8088-9273bd61ee37",
+            "zIndex": 10,
+            "data": {
+              "type": "tm.Process",
+              "name": "Notification\n Service",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "handlesCardPayment": false,
+              "handlesGoodsOrServices": false,
+              "isWebApplication": false,
+              "privilegeLevel": "",
+              "threats": []
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "auth request /\nrequest + JWT",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "aceaa6fd-7c77-4ed8-a8b5-f970a5ce2db4",
+                  "title": "API Gateway Request Parameter Injection",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Tampering",
+                  "description": "An attacker crafts malicious requests to the API Gateway with manipulated parameters — e.g. changing patient_id=123 to patient_id=456 in a records request. If the API Gateway forwards parameters without validation and downstream services trust them without re-authorizing against the JWT claims, the attacker accesses another patient's data (IDOR — Insecure Direct Object Reference).",
+                  "mitigation": "API Gateway must validate and sanitize all inputs before forwarding. Downstream services must re-verify authorization — the Medical Records Service should cross-check that the patient_id in the request matches the subject claim in the JWT, never trusting the raw parameter alone. Standard: OWASP Top 10 A01, NIST 800-53 SI-10.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 4,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "auth request /\nrequest + JWT"
+            ],
+            "id": "58c1e976-d829-40b8-9627-9cd8246540ea",
+            "source": {
+              "cell": "c757dda0-0d57-45a0-b458-0fa844f8de71",
+              "port": "3f3150c8-6ea2-4a56-8250-c8cf391ba86b"
+            },
+            "target": {
+              "cell": "dec8f3c9-521b-43fe-8fc0-56935e16be42",
+              "port": "7a42a010-adc9-4130-80f0-5aa767007633"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "forward auth",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "forward auth"
+            ],
+            "id": "154130d5-446e-4eae-bf0a-5f4d89212eae",
+            "source": {
+              "cell": "dec8f3c9-521b-43fe-8fc0-56935e16be42",
+              "port": "3f3150c8-6ea2-4a56-8250-c8cf391ba86b"
+            },
+            "target": {
+              "cell": "d5b06819-b7b7-4be8-b7c2-b8994f0d1ef9",
+              "port": "7a42a010-adc9-4130-80f0-5aa767007633"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "JWT Issued",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "JWT Issued"
+            ],
+            "id": "dee23ee8-e6dd-47be-ae61-26072635abc0",
+            "source": {
+              "cell": "d5b06819-b7b7-4be8-b7c2-b8994f0d1ef9",
+              "port": "86ce4b14-2f25-4d5c-9548-d32f794652a9"
+            },
+            "target": {
+              "cell": "dec8f3c9-521b-43fe-8fc0-56935e16be42",
+              "port": "86ce4b14-2f25-4d5c-9548-d32f794652a9"
+            },
+            "vertices": [
+              {
+                "x": 1080,
+                "y": 170
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "2e671213-27ff-4767-a325-c18561703e02",
+                  "title": "JWT Claims Leakage via Verbose Error Responses",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "",
+                  "description": "If the API Gateway or any internal service returns verbose error messages (e.g. stack traces, decoded JWT payloads, internal service URLs) to the frontend on failed requests, an attacker can probe endpoints with malformed inputs to harvest internal architecture details, patient ID formats, and JWT structure — all of which accelerate further attacks.\n",
+                  "mitigation": "Implement a global error handling layer at the API Gateway that strips internal details and returns only generic error codes to the client. Internal error details go to logs only, never to the response body. Standard: OWASP Top 10 A05 (Security Misconfiguration), NIST 800-53 SI-11.\n",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 8,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "c3da79e2-c9f5-4271-becd-01744e495350",
+            "source": {
+              "cell": "dec8f3c9-521b-43fe-8fc0-56935e16be42",
+              "port": "86ce4b14-2f25-4d5c-9548-d32f794652a9"
+            },
+            "target": {
+              "cell": "c757dda0-0d57-45a0-b458-0fa844f8de71",
+              "port": "86ce4b14-2f25-4d5c-9548-d32f794652a9"
+            },
+            "vertices": [
+              {
+                "x": 700,
+                "y": 165
+              }
+            ],
+            "tools": {
+              "items": [
+                "boundary",
+                "button-remove",
+                "vertices",
+                "source-arrowhead",
+                "target-arrowhead"
+              ],
+              "name": null
+            }
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "login request /\nview records request /\nbook appointment",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "3a503b74-2677-4dca-990a-2012bd218abd",
+                  "title": "Patient Portal Phishing / Credential Harvesting",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "",
+                  "description": "An attacker clones the Patient Portal UI and hosts it on a lookalike domain (e.g. patient-porta1.hospital.com). Patients submit real credentials to the fake site. Since there's no MFA, the attacker immediately uses harvested credentials to log into the real portal and access medical records.",
+                  "mitigation": " Enforce Multi-Factor Authentication (MFA) for all patient logins. Implement DMARC/DKIM/SPF on the hospital domain to prevent email-based phishing. Add HSTS preloading so browsers refuse non-HTTPS connections. Standard: NIST 800-53 IA-2, ISO 27001 A.9.4.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 2,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "login request /\nview records request /\nbook appointment"
+            ],
+            "id": "cb0351f3-8cb5-4edd-bb84-1629bd5a747a",
+            "source": {
+              "cell": "88943fe3-7a03-4a6a-a0ab-4bf134adc98c",
+              "port": "3664a95b-e208-492f-b836-54a50f59f600"
+            },
+            "target": {
+              "cell": "c757dda0-0d57-45a0-b458-0fa844f8de71",
+              "port": "7a42a010-adc9-4130-80f0-5aa767007633"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "forward + JWT",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "forward + JWT"
+            ],
+            "id": "7092f091-b8b6-452f-a6ae-9d218fc0322d",
+            "source": {
+              "cell": "dec8f3c9-521b-43fe-8fc0-56935e16be42",
+              "port": "35777d2c-a1b9-43a7-ae18-92142be49cb1"
+            },
+            "target": {
+              "cell": "82cefcb0-2aa4-47f1-8fc5-bbc1bf626df5",
+              "port": "86ce4b14-2f25-4d5c-9548-d32f794652a9"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "verify JWT",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "87674a88-7466-4b61-aff9-10c7ec70abe5",
+                  "title": "JWT Forgery via Weak Signing Key",
+                  "status": "Open",
+                  "severity": "Critical",
+                  "type": "",
+                  "description": "If the Identity Service signs JWTs with a weak or hardcoded secret (e.g. secret123), an attacker can brute-force the signing key offline using tools like hashcat against a captured token. They then forge a JWT with elevated claims (e.g. \"role\": \"admin\" or another patient's ID) and make API requests impersonating any user. In a healthcare context this means unauthorized access to any patient's medical records — a critical HIPAA violation.",
+                  "mitigation": "Use RS256 (asymmetric signing) instead of HS256 — the private key signs, services only hold the public key for verification, so there's nothing to brute-force. Rotate keys regularly. Standard: OWASP Top 10 A07 (Identification and Authentication Failures), NIST 800-53 IA-5.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 1,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "verify JWT"
+            ],
+            "id": "22e43516-4d90-4ab2-807f-8d02d4976bb6",
+            "source": {
+              "cell": "82cefcb0-2aa4-47f1-8fc5-bbc1bf626df5",
+              "port": "3f3150c8-6ea2-4a56-8250-c8cf391ba86b"
+            },
+            "target": {
+              "cell": "d5b06819-b7b7-4be8-b7c2-b8994f0d1ef9",
+              "port": "35777d2c-a1b9-43a7-ae18-92142be49cb1"
+            },
+            "vertices": [
+              {
+                "x": 1130,
+                "y": 320
+              },
+              {
+                "x": 1180,
+                "y": 320
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "fetch records",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "cc19d630-b71b-47cf-8fac-58010d6f8d77",
+                  "title": "Patient Records Exposed via Unencrypted Internal Traffic",
+                  "status": "Open",
+                  "severity": "Critical",
+                  "type": "Information disclosure",
+                  "description": "The assignment states inter-service communication occurs over an internal network — but internal doesn't mean encrypted. If services communicate over plain HTTP internally, an attacker who gains a foothold on any internal host (e.g. via a compromised Notification Service dependency) can sniff traffic and intercept patient medical records in plaintext. In a microservices environment, lateral movement between services makes this a high-value attack path.",
+                  "mitigation": "Enforce TLS for all inter-service communication even on the internal network — adopt a zero-trust posture. Encrypt the Patient Records DB at rest using AES-256. Standard: NIST 800-53 SC-8, SC-28, ISO 27001 A.10.1, OWASP Top 10 A02 (Cryptographic Failures).",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 7,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 1,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "fetch records"
+            ],
+            "id": "fce4c8ec-6350-4ff2-b31a-d029d2859a8a",
+            "source": {
+              "cell": "82cefcb0-2aa4-47f1-8fc5-bbc1bf626df5",
+              "port": "35777d2c-a1b9-43a7-ae18-92142be49cb1"
+            },
+            "target": {
+              "cell": "7b55b511-107f-409d-a563-e85260524d9e",
+              "port": "1b4aac6c-ffd8-495e-9907-d66abd491c2c"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "records",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "records"
+            ],
+            "id": "968b9fe5-55de-4528-a463-7cbb55a085b6",
+            "source": {
+              "cell": "7b55b511-107f-409d-a563-e85260524d9e",
+              "port": "fc8dfe7b-7d74-4d1f-87d2-b12ef703a180"
+            },
+            "target": {
+              "cell": "82cefcb0-2aa4-47f1-8fc5-bbc1bf626df5",
+              "port": "3f3150c8-6ea2-4a56-8250-c8cf391ba86b"
+            },
+            "vertices": [
+              {
+                "x": 1170,
+                "y": 390
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "records response",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "records response"
+            ],
+            "id": "f689ada3-ad4d-49e2-8127-522d3e3a8b01",
+            "source": {
+              "x": 870,
+              "y": 420
+            },
+            "target": {
+              "x": 880,
+              "y": 270
+            },
+            "vertices": [
+              {
+                "x": 730,
+                "y": 380
+              },
+              {
+                "x": 776,
+                "y": 280
+              },
+              {
+                "x": 840,
+                "y": 280
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "forward",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "forward"
+            ],
+            "id": "3b9d9e0f-5bc5-4853-86bb-a8ecea691b27",
+            "source": {
+              "cell": "dec8f3c9-521b-43fe-8fc0-56935e16be42",
+              "port": "86ce4b14-2f25-4d5c-9548-d32f794652a9"
+            },
+            "target": {
+              "cell": "2b7b2335-3d44-40cc-9125-b57ca1d8fecf",
+              "port": "35777d2c-a1b9-43a7-ae18-92142be49cb1"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Write appointments",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Write appointments"
+            ],
+            "id": "bfe1265a-c54b-4794-80dd-eff2bf617ca0",
+            "source": {
+              "cell": "2b7b2335-3d44-40cc-9125-b57ca1d8fecf",
+              "port": "86ce4b14-2f25-4d5c-9548-d32f794652a9"
+            },
+            "target": {
+              "cell": "ba123d0e-5de2-4f74-a797-e4a1e5a00843",
+              "port": "02f1ccb7-17a9-42e2-8c1f-8e4e843fcfc2"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "trigger reminder",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "trigger reminder"
+            ],
+            "id": "1b341a2c-ac7a-4663-beef-645210e305ee",
+            "source": {
+              "cell": "2b7b2335-3d44-40cc-9125-b57ca1d8fecf",
+              "port": "35777d2c-a1b9-43a7-ae18-92142be49cb1"
+            },
+            "target": {
+              "cell": "e776efbf-9730-4ed8-8088-9273bd61ee37",
+              "port": "7a42a010-adc9-4130-80f0-5aa767007633"
+            },
+            "vertices": [
+              {
+                "x": 1080,
+                "y": 90
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "SMS",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "SMS"
+            ],
+            "id": "1356e4af-8a49-4aa5-925f-eff38e57496e",
+            "source": {
+              "cell": "e776efbf-9730-4ed8-8088-9273bd61ee37",
+              "port": "3f3150c8-6ea2-4a56-8250-c8cf391ba86b"
+            },
+            "target": {
+              "cell": "b58cc5cd-d0c1-4afe-9342-c3ce55d3ba0c",
+              "port": "961e2337-7a5c-45dd-919f-81d700bfc846"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Data Flow",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Data Flow"
+            ],
+            "id": "552ff625-7c98-4329-854a-1e98d999e346",
+            "source": {
+              "cell": "b58cc5cd-d0c1-4afe-9342-c3ce55d3ba0c",
+              "port": "e5d00694-d155-4da6-8c81-ee241744c740"
+            },
+            "target": {
+              "cell": "88943fe3-7a03-4a6a-a0ab-4bf134adc98c",
+              "port": "e5d00694-d155-4da6-8c81-ee241744c740"
+            },
+            "vertices": [
+              {
+                "x": 1380,
+                "y": -240
+              },
+              {
+                "x": 780,
+                "y": -260
+              },
+              {
+                "x": 360,
+                "y": -220
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Email",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [],
+              "trustBoundaryIds": []
+            },
+            "labels": [
+              "Email"
+            ],
+            "id": "1247bdf3-e7c7-4904-ad07-7b85ea229454",
+            "source": {
+              "cell": "e776efbf-9730-4ed8-8088-9273bd61ee37",
+              "port": "86ce4b14-2f25-4d5c-9548-d32f794652a9"
+            },
+            "target": {
+              "cell": "3b2820d3-ef4e-4382-8611-a378792dd936",
+              "port": "f4641b4c-bfc0-4ba8-80bc-af12000e2576"
+            },
+            "vertices": []
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 10,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Read patient data",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": [
+                {
+                  "id": "704d8c1e-1e55-41a1-8535-db8c740aaff5",
+                  "title": "Medical Record Modification by Compromised Internal Service",
+                  "status": "Open",
+                  "severity": "Critical",
+                  "type": "Tampering",
+                  "description": "The Appointment Service reads patient data from the Medical Records Service. If the Appointment Service is compromised (e.g. via a dependency vulnerability), an attacker could send forged write requests to the Medical Records Service to alter diagnoses, medication dosages, or allergy records. Since inter-service communication is on an internal network, there may be implicit trust with no per-request authorization checks. Tampered medical records could directly endanger patient lives.\n",
+                  "mitigation": "Enforce mutual TLS (mTLS) between all internal services so each service cryptographically proves its identity. Medical Records Service must require explicit write authorization even from internal callers — no implicit trust. Standard: NIST 800-53 SC-8, ISO 27001 A.13.2, OWASP Top 10 A01 (Broken Access Control).",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 3,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            },
+            "labels": [
+              "Read patient data"
+            ],
+            "id": "1290d1bb-fab7-48b2-bac1-d4b4a5d5e14b",
+            "source": {
+              "x": 860,
+              "y": 40
+            },
+            "target": {
+              "cell": "82cefcb0-2aa4-47f1-8fc5-bbc1bf626df5",
+              "port": "7a42a010-adc9-4130-80f0-5aa767007633"
+            },
+            "vertices": [
+              {
+                "x": 840,
+                "y": 40
+              },
+              {
+                "x": 570,
+                "y": 10
+              },
+              {
+                "x": 130,
+                "y": -10
+              },
+              {
+                "x": 0,
+                "y": 10
+              },
+              {
+                "x": 0,
+                "y": 90
+              },
+              {
+                "x": -20,
+                "y": 210
+              },
+              {
+                "x": 130,
+                "y": 410
+              },
+              {
+                "x": 300,
+                "y": 450
+              },
+              {
+                "x": 670,
+                "y": 450
+              }
+            ]
+          },
+          {
+            "position": {
+              "x": 1194,
+              "y": 415
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Patient Records DB"
+              },
+              "topLine": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "fc8dfe7b-7d74-4d1f-87d2-b12ef703a180"
+                },
+                {
+                  "group": "right",
+                  "id": "2ae74ab2-51f7-4cd3-97ae-2050b3361972"
+                },
+                {
+                  "group": "bottom",
+                  "id": "02f1ccb7-17a9-42e2-8c1f-8e4e843fcfc2"
+                },
+                {
+                  "group": "left",
+                  "id": "1b4aac6c-ffd8-495e-9907-d66abd491c2c"
+                }
+              ]
+            },
+            "id": "7b55b511-107f-409d-a563-e85260524d9e",
+            "zIndex": 11,
+            "data": {
+              "type": "tm.Store",
+              "name": "Patient Records DB",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": [
+                {
+                  "id": "e700a001-223d-421d-aec9-c090f0ef34b9",
+                  "title": "Insufficient Audit Logging Across Services",
+                  "status": "Open",
+                  "severity": "TBD",
+                  "type": "Repudiation",
+                  "description": "A malicious insider (e.g. a rogue nurse) queries patient records they have no clinical reason to access. If each microservice logs independently without a centralized audit trail, or if logs are stored locally and can be deleted by the same process that writes them, there's no reliable way to prove who accessed what and when. In healthcare, this directly violates audit requirements under HIPAA and ISO 27001.",
+                  "mitigation": "Implement a centralized, tamper-evident audit logging system (e.g. write-once log store, SIEM integration). Every read/write to Patient Records DB and Appointments DB must emit a structured log event with service identity, user JWT subject, timestamp, and operation. Standard: NIST 800-53 AU-2, AU-9, ISO 27001 A.12.4, HIPAA Audit Controls.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 6,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "repudiation": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            }
+          },
+          {
+            "position": {
+              "x": 870,
+              "y": -200
+            },
+            "size": {
+              "width": 120,
+              "height": 60
+            },
+            "attrs": {
+              "text": {
+                "text": "Appointments DB"
+              },
+              "topLine": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              },
+              "bottomLine": {
+                "stroke": "red",
+                "strokeWidth": 2.5,
+                "strokeDasharray": null
+              }
+            },
+            "visible": true,
+            "shape": "store",
+            "ports": {
+              "groups": {
+                "top": {
+                  "position": "top",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "right": {
+                  "position": "right",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "bottom": {
+                  "position": "bottom",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                },
+                "left": {
+                  "position": "left",
+                  "attrs": {
+                    "circle": {
+                      "r": 4,
+                      "magnet": true,
+                      "stroke": "#5F95FF",
+                      "strokeWidth": 1,
+                      "fill": "#fff",
+                      "style": {
+                        "visibility": "hidden"
+                      }
+                    }
+                  }
+                }
+              },
+              "items": [
+                {
+                  "group": "top",
+                  "id": "fc8dfe7b-7d74-4d1f-87d2-b12ef703a180"
+                },
+                {
+                  "group": "right",
+                  "id": "2ae74ab2-51f7-4cd3-97ae-2050b3361972"
+                },
+                {
+                  "group": "bottom",
+                  "id": "02f1ccb7-17a9-42e2-8c1f-8e4e843fcfc2"
+                },
+                {
+                  "group": "left",
+                  "id": "1b4aac6c-ffd8-495e-9907-d66abd491c2c"
+                }
+              ]
+            },
+            "id": "ba123d0e-5de2-4f74-a797-e4a1e5a00843",
+            "zIndex": 12,
+            "data": {
+              "type": "tm.Store",
+              "name": "Appointments DB",
+              "description": "",
+              "outOfScope": false,
+              "isTrustBoundary": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": true,
+              "isALog": false,
+              "isEncrypted": false,
+              "isSigned": false,
+              "storesCredentials": false,
+              "storesInventory": false,
+              "threats": [
+                {
+                  "id": "090001e5-6c73-40ed-9adf-3aaa5b1f6a9b",
+                  "title": " Insufficient Audit Logging Across Services",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Repudiation",
+                  "description": "A malicious insider (e.g. a rogue nurse) queries patient records they have no clinical reason to access. If each microservice logs independently without a centralized audit trail, or if logs are stored locally and can be deleted by the same process that writes them, there's no reliable way to prove who accessed what and when. In healthcare, this directly violates audit requirements under HIPAA and ISO 27001.",
+                  "mitigation": "Implement a centralized, tamper-evident audit logging system (e.g. write-once log store, SIEM integration). Every read/write to Patient Records DB and Appointments DB must emit a structured log event with service identity, user JWT subject, timestamp, and operation. Standard: NIST 800-53 AU-2, AU-9, ISO 27001 A.12.4, HIPAA Audit Controls.",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 5,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 0,
+                "repudiation": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
+            }
+          }
+        ]
       }
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 0
+    "threatTop": 8
   }
 }
