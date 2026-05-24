@@ -18,6 +18,188 @@
         "version": "2.6.2",
         "cells": [
           {
+            "position": {
+              "x": 243,
+              "y": 175
+            },
+            "size": {
+              "width": 150,
+              "height": 110
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "a4d99027-04f9-4985-8057-225a853bdb96",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [
+                "cb0351f3-8cb5-4edd-bb84-1629bd5a747a",
+                "552ff625-7c98-4329-854a-1e98d999e346"
+              ],
+              "containedElements": [
+                "88943fe3-7a03-4a6a-a0ab-4bf134adc98c"
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": 1130,
+              "y": -169.99999999999937
+            },
+            "size": {
+              "width": 500,
+              "height": 120
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "1f5cc908-2906-4d65-8eef-ed933e30cc53",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [
+                "1356e4af-8a49-4aa5-925f-eff38e57496e",
+                "552ff625-7c98-4329-854a-1e98d999e346",
+                "1247bdf3-e7c7-4904-ad07-7b85ea229454"
+              ],
+              "containedElements": [
+                "b58cc5cd-d0c1-4afe-9342-c3ce55d3ba0c",
+                "3b2820d3-ef4e-4382-8611-a378792dd936"
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": 560,
+              "y": 150.0000000000009
+            },
+            "size": {
+              "width": 460,
+              "height": 150
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "a5352ceb-64fa-41df-a408-55ec0cb59cf4",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [
+                "58c1e976-d829-40b8-9627-9cd8246540ea",
+                "154130d5-446e-4eae-bf0a-5f4d89212eae",
+                "dee23ee8-e6dd-47be-ae61-26072635abc0",
+                "c3da79e2-c9f5-4271-becd-01744e495350",
+                "7092f091-b8b6-452f-a6ae-9d218fc0322d",
+                "3b9d9e0f-5bc5-4853-86bb-a8ecea691b27"
+              ],
+              "containedElements": [
+                "dec8f3c9-521b-43fe-8fc0-56935e16be42"
+              ]
+            }
+          },
+          {
+            "shape": "trust-boundary-curve",
+            "width": 200,
+            "height": 100,
+            "zIndex": -1,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Boundary",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [
+                "58c1e976-d829-40b8-9627-9cd8246540ea",
+                "c3da79e2-c9f5-4271-becd-01744e495350",
+                "1356e4af-8a49-4aa5-925f-eff38e57496e",
+                "1290d1bb-fab7-48b2-bac1-d4b4a5d5e14b"
+              ],
+              "containedElements": [
+                "3b2820d3-ef4e-4382-8611-a378792dd936",
+                "dec8f3c9-521b-43fe-8fc0-56935e16be42",
+                "d5b06819-b7b7-4be8-b7c2-b8994f0d1ef9",
+                "2b7b2335-3d44-40cc-9125-b57ca1d8fecf",
+                "82cefcb0-2aa4-47f1-8fc5-bbc1bf626df5",
+                "e776efbf-9730-4ed8-8088-9273bd61ee37",
+                "7b55b511-107f-409d-a563-e85260524d9e",
+                "ba123d0e-5de2-4f74-a797-e4a1e5a00843"
+              ]
+            },
+            "labels": [
+              "Trust Boundary"
+            ],
+            "id": "d1c64c41-db72-4caa-a442-db39d1c1232c",
+            "source": {
+              "x": 1130,
+              "y": 130
+            },
+            "target": {
+              "x": 1130,
+              "y": 130
+            },
+            "vertices": [
+              {
+                "x": 1040,
+                "y": 330
+              },
+              {
+                "x": 830,
+                "y": 390
+              },
+              {
+                "x": 900,
+                "y": 540
+              },
+              {
+                "x": 1370,
+                "y": 230
+              },
+              {
+                "x": 1270,
+                "y": 170
+              },
+              {
+                "x": 1180,
+                "y": 60
+              },
+              {
+                "x": 1130,
+                "y": 30
+              },
+              {
+                "x": 1090,
+                "y": -180
+              },
+              {
+                "x": 1050,
+                "y": -250
+              },
+              {
+                "x": 1010,
+                "y": -220
+              },
+              {
+                "x": 810,
+                "y": -180
+              },
+              {
+                "x": 840,
+                "y": 90
+              }
+            ]
+          },
+          {
             "shape": "edge",
             "attrs": {
               "line": {
@@ -198,8 +380,8 @@
           },
           {
             "position": {
-              "x": 1450,
-              "y": 50
+              "x": 1420,
+              "y": -140
             },
             "size": {
               "width": 112.5,
@@ -1044,8 +1226,8 @@
                 "text": "Notification\n Service"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1142,12 +1324,34 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "de9eb7d7-b619-4cb9-b57e-53717ca9021e",
+                  "title": "Compromised Notification Service Pivoting to Internal Services",
+                  "status": "Open",
+                  "severity": "Critical",
+                  "type": "Tampering",
+                  "description": "The Notification Service has the weakest security posture — it integrates with external third-party providers (SMS, email) making it the most exposed internal service. If an attacker exploits a vulnerability in a third-party SDK used by the Notification Service, they gain code execution inside the internal network. From there, they can make direct API calls to Medical Records Service or Identity Service — services that may implicitly trust internal network traffic — effectively elevating from a low-value notification service to full records access.\n",
+                  "mitigation": "Notification Service should only be able to communicate with the services it strictly needs (Appointment Service inbound only), enforced by internal firewall rules. Run each service with minimum required permissions (principle of least privilege). Treat the Notification Service as semi-untrusted given its third-party exposure. Standard: NIST 800-53 AC-6, SC-7, ISO 27001 A.13.1, Zero Trust Architecture principles.\n",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 10,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 1,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
             }
           },
           {
@@ -1196,7 +1400,10 @@
                   "score": ""
                 }
               ],
-              "trustBoundaryIds": [],
+              "trustBoundaryIds": [
+                "a5352ceb-64fa-41df-a408-55ec0cb59cf4",
+                "d1c64c41-db72-4caa-a442-db39d1c1232c"
+              ],
               "threatFrequency": {
                 "tampering": 1,
                 "informationDisclosure": 0,
@@ -1248,7 +1455,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "a5352ceb-64fa-41df-a408-55ec0cb59cf4"
+              ]
             },
             "labels": [
               "forward auth"
@@ -1295,7 +1504,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "a5352ceb-64fa-41df-a408-55ec0cb59cf4"
+              ]
             },
             "labels": [
               "JWT Issued"
@@ -1362,7 +1573,10 @@
                   "score": ""
                 }
               ],
-              "trustBoundaryIds": [],
+              "trustBoundaryIds": [
+                "a5352ceb-64fa-41df-a408-55ec0cb59cf4",
+                "d1c64c41-db72-4caa-a442-db39d1c1232c"
+              ],
               "threatFrequency": {
                 "tampering": 0,
                 "informationDisclosure": 0,
@@ -1386,17 +1600,7 @@
                 "x": 700,
                 "y": 165
               }
-            ],
-            "tools": {
-              "items": [
-                "boundary",
-                "button-remove",
-                "vertices",
-                "source-arrowhead",
-                "target-arrowhead"
-              ],
-              "name": null
-            }
+            ]
           },
           {
             "shape": "flow",
@@ -1444,7 +1648,9 @@
                   "score": ""
                 }
               ],
-              "trustBoundaryIds": [],
+              "trustBoundaryIds": [
+                "a4d99027-04f9-4985-8057-225a853bdb96"
+              ],
               "threatFrequency": {
                 "tampering": 0,
                 "informationDisclosure": 0,
@@ -1496,7 +1702,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "a5352ceb-64fa-41df-a408-55ec0cb59cf4"
+              ]
             },
             "labels": [
               "forward + JWT"
@@ -1798,7 +2006,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "a5352ceb-64fa-41df-a408-55ec0cb59cf4"
+              ]
             },
             "labels": [
               "forward"
@@ -1865,7 +2075,8 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -1886,13 +2097,32 @@
               "outOfScope": false,
               "isTrustBoundary": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": [],
-              "trustBoundaryIds": []
+              "threats": [
+                {
+                  "id": "1880ad0d-bbb0-4122-834c-1017ed1e53c4",
+                  "title": "Notification Service Abuse via Appointment Spam",
+                  "status": "Open",
+                  "severity": "Medium",
+                  "type": "Denial of service",
+                  "description": "An authenticated but malicious patient creates thousands of appointments in rapid succession, each triggering the Notification Service to send SMS/email reminders. This exhausts third-party provider API quotas (SMS credits, email rate limits), causing legitimate notifications to fail. It also drives up operational costs significantly.\n",
+                  "mitigation": "Implement rate limiting on appointment creation per user (e.g. max 10 per hour). Add async queuing (e.g. RabbitMQ, SQS) between Appointment Service and Notification Service to decouple and throttle outbound notification volume. Standard: NIST 800-53 SC-5, OWASP Top 10 A04 (Insecure Design).",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 9,
+                  "score": ""
+                }
+              ],
+              "trustBoundaryIds": [],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 1
+              }
             },
             "labels": [
               "trigger reminder"
@@ -1906,12 +2136,7 @@
               "cell": "e776efbf-9730-4ed8-8088-9273bd61ee37",
               "port": "7a42a010-adc9-4130-80f0-5aa767007633"
             },
-            "vertices": [
-              {
-                "x": 1080,
-                "y": 90
-              }
-            ]
+            "vertices": []
           },
           {
             "shape": "flow",
@@ -1944,7 +2169,10 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "1f5cc908-2906-4d65-8eef-ed933e30cc53",
+                "d1c64c41-db72-4caa-a442-db39d1c1232c"
+              ]
             },
             "labels": [
               "SMS"
@@ -1991,7 +2219,10 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "a4d99027-04f9-4985-8057-225a853bdb96",
+                "1f5cc908-2906-4d65-8eef-ed933e30cc53"
+              ]
             },
             "labels": [
               "Data Flow"
@@ -2051,7 +2282,9 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "1f5cc908-2906-4d65-8eef-ed933e30cc53"
+              ]
             },
             "labels": [
               "Email"
@@ -2113,7 +2346,9 @@
                   "score": ""
                 }
               ],
-              "trustBoundaryIds": [],
+              "trustBoundaryIds": [
+                "d1c64c41-db72-4caa-a442-db39d1c1232c"
+              ],
               "threatFrequency": {
                 "tampering": 1,
                 "informationDisclosure": 0,
@@ -2468,6 +2703,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "",
-    "threatTop": 8
+    "threatTop": 10
   }
 }
