@@ -19,6 +19,93 @@
         "cells": [
           {
             "position": {
+              "x": 111.25,
+              "y": 115
+            },
+            "size": {
+              "width": 230,
+              "height": 170
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "778451f3-ab26-43f5-a974-9688fab8e1e9",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [
+                "8cb94bdf-3c6c-4354-843f-582584b51311",
+                "df960bf8-4fb4-41fd-ad97-c53f36541920"
+              ],
+              "containedElements": [
+                "4cbf4dcd-e7fe-4459-9b5a-4a9a4faf5194"
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": 579.9999999999989,
+              "y": -139.99999999999943
+            },
+            "size": {
+              "width": 180,
+              "height": 440
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "186501f8-7b49-44d5-a0d3-f18fb5af714c",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [
+                "ccb305b3-1ee7-4aa1-a3a9-b4ebfb346f7b",
+                "8cb94bdf-3c6c-4354-843f-582584b51311",
+                "a4c3c68c-e5a3-4ba5-83e9-6feb37734ed5",
+                "df960bf8-4fb4-41fd-ad97-c53f36541920"
+              ],
+              "containedElements": [
+                "4ff9d85e-b953-44fe-a645-fa82788a931e",
+                "510fe0d7-7f3f-4531-b965-bfb520aef84c"
+              ]
+            }
+          },
+          {
+            "position": {
+              "x": 900,
+              "y": 150.00000000000014
+            },
+            "size": {
+              "width": 200,
+              "height": 110
+            },
+            "visible": true,
+            "shape": "trust-boundary-box",
+            "id": "84095074-df57-4a86-81f4-939f6e56bb90",
+            "zIndex": -1,
+            "data": {
+              "type": "tm.BoundaryBox",
+              "name": "Trust Boundary",
+              "description": "",
+              "isTrustBoundary": true,
+              "hasOpenThreats": false,
+              "crossingFlows": [
+                "ccb305b3-1ee7-4aa1-a3a9-b4ebfb346f7b",
+                "a4c3c68c-e5a3-4ba5-83e9-6feb37734ed5"
+              ],
+              "containedElements": [
+                "9d2480e7-c167-45b7-93ae-02411bd0dd25"
+              ]
+            }
+          },
+          {
+            "position": {
               "x": 170,
               "y": -149.99999999999997
             },
@@ -568,7 +655,10 @@
                   "score": ""
                 }
               ],
-              "trustBoundaryIds": [],
+              "trustBoundaryIds": [
+                "186501f8-7b49-44d5-a0d3-f18fb5af714c",
+                "84095074-df57-4a86-81f4-939f6e56bb90"
+              ],
               "threatFrequency": {
                 "tampering": 0,
                 "informationDisclosure": 0,
@@ -635,7 +725,10 @@
                   "score": ""
                 }
               ],
-              "trustBoundaryIds": [],
+              "trustBoundaryIds": [
+                "778451f3-ab26-43f5-a974-9688fab8e1e9",
+                "186501f8-7b49-44d5-a0d3-f18fb5af714c"
+              ],
               "threatFrequency": {
                 "tampering": 0,
                 "informationDisclosure": 0,
@@ -687,7 +780,10 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "186501f8-7b49-44d5-a0d3-f18fb5af714c",
+                "84095074-df57-4a86-81f4-939f6e56bb90"
+              ]
             },
             "labels": [
               "Credential response"
@@ -815,7 +911,10 @@
               "isPublicNetwork": false,
               "protocol": "",
               "threats": [],
-              "trustBoundaryIds": []
+              "trustBoundaryIds": [
+                "778451f3-ab26-43f5-a974-9688fab8e1e9",
+                "186501f8-7b49-44d5-a0d3-f18fb5af714c"
+              ]
             },
             "labels": [
               "Session token"
